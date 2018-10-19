@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+	  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22x;
+}
+
+a {
+    text-decoration: none;
+    color: #dcdcdc;
+}
+ ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+ p {
+    margin: 0;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between; /*or space-around*/
+}
+
+.header-container > div {
+	margin-top: 10px;
+  float: left;
+  height: 120px;
+  background-color: #777;
+}
+
+.square1 {
+	flex-basis: 20%;
+}
+
+.square2 {
+	flex-basis: 30%;
+}
+
+.square3 {
+	flex-basis: 45%;
+	padding: 10px 0 0 10px;
+	color: #dcdcdc;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    height: 550px;
+}
+
+.sidebar {
+	  margin-top: 10px;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 660px;
+}
+
+.top-sidebar {
+	background: #777;
+	padding: 10px;
+}
+
+.bottom-sidebar {
+	background: #777;
+	height: 150px;
+	width: relative;
+	margin-bottom: 135px;
+}
+
+.basic {
+	flex-basis: 77%;
+	margin-top: 10px;
+}
+
+.top-basic {
+	background: #cdcdcd;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.top-basic ul li {
+	padding-left: 15px;
+}
+
+.item-basic {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	height: 130px;
+	background: #cdcdcd;
+	width: 16%;
+	margin: 0 10px 10px 0;
+}
+
+.item:nth-child(5) {
+	margin-right: 0;
+}
+
+.bottom-basic {
+	display: flex;
+	height: 120px;
+	justify-content: space-between;
+	
+}
+
+.bottom-left,
+.bottom-right {
+	flex-basis: 45%;
+	height: 100%;
+	background: #cdcdcd;
+	padding: 10px;
+	text-align: justify;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block1,
+.block2 {
+	background: #777;
+	color: #cdcdcd;
+	padding: 10px;
+	margin: 0 5px 5px 0;
+	flex-basis: 30%;
+	min-height: 140px;
+}
+
+.block1 ul {
+	float: left;
+	width: 50%;
+}
+
+.block2 li {
+	list-style: disc;
+	list-style-position: inside;
+}
+
+.block3 {
+	position: relative;
+	flex-basis: 30%;
+	min-height: 140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.block3-1 {
+    background-color: #777;
+    height: 65px;
+    width:100%;
+}
+ .block3-2 {
+    background-color: #777;
+    position: absolute;
+    height: 65px;
+    bottom: 0;
+    width: 100%;
+}
