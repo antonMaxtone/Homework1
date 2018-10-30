@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-	  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
 	width: 100%;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 22x;
-	padding: 5px 25px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22x;
+	padding: 5px 0px;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
 	border-bottom: 1px solid #C2C2C2;
 }
 
-.square1{
+.square1 {
 	height: 110px;
 	width: 110px;
 	background: #777777;
@@ -61,8 +61,8 @@ header {
 }
 
 .container .bar {
-/*	position: relative;*/
-  width: 160px;
+	/*	position: relative;*/
+	width: 160px;
 	float: left;
 }
 
@@ -89,8 +89,8 @@ header {
 	width: 160px;
 	background: #777777;
 	margin-top: 224px;
-/*	position: absolute;*/
-/*	bottom: 20px;*/
+	/*	position: absolute;*/
+	/*	bottom: 20px;*/
 }
 
 .basic {
@@ -101,7 +101,7 @@ header {
 .top-basic {
 	background: #DCDCDC;
 	padding: 10px 25px;
-	margin: 0 0 5px 10px;
+	margin: 0 0 0 0;
 	color: #777;
 }
 
@@ -116,7 +116,7 @@ header {
 	height: 160px;
 	margin: 10px;
 	float: left;
-  background: #DCDCDC;
+	background: #DCDCDC;
 }
 
 .bottom-basic ul {
@@ -137,23 +137,23 @@ header {
 .bottom-basic ul li:last-child {
 	float: right;
 	margin-right: 0;
-} 
+}
 
 .container-footer {
 	width: 960px;
 	margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
-  position: relative;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
 }
 
 .block1 {
 	color: #fff;
-  width: 25%;
-  margin: 20px 5px 15px 0px;
-  padding: 5px 5px;
-  background: #777;
-  float: left;
+	width: 25%;
+	margin: 20px 5px 15px 0px;
+	padding: 5px 5px;
+	background: #777;
+	float: left;
 }
 
 .block1 ul {
@@ -173,6 +173,7 @@ header {
 	margin-left: 0;
 	list-style-type: none;
 }
+
 .block1:first-child ul {
 	margin: 0;
 	padding: 0;
@@ -188,7 +189,7 @@ header {
 	left: 245px;
 }
 
-.block2 ul li a  {
+.block2 ul li a {
 	color: beige;
 	text-decoration: none;
 }
@@ -197,11 +198,12 @@ header {
 	list-style: inside;
 	color: beige;
 }
+
 .block2 ul {
 	padding: 10px 10px;
 }
 
-.block3:first-child  {
+.block3:first-child {
 	width: 10px;
 	height: 60px;
 	background: #777;
