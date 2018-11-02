@@ -1,6 +1,6 @@
 body {
 	display: block;
-	width: 768px;
+	width: 1024px;
 	height: auto;
 }
 
@@ -13,38 +13,38 @@ header {
 .square1 {
 	float: none;
 	width: 100%;
-	height: 50px;
+	height: 100px;
 	margin: 0 5px 10px 5px;
 }
 
 .square2 {
 	float: none;
 	width: 100%;
-	height: 50px;
+	height: 100px;
 	margin: 0 5px 10px 5px;
 }
 
 .square3 {
 	float: none;
 	width: 100%;
-	height: 50px;
+	height: 100px;
 	margin: 0 5px 10px 5px;
-	font-size: 10px;
-	text-align: left;
+	font-size: 14px;
+	text-align: right;
 }
 
 .bar {
-	height: 243px;
-	font-size: 10px;
+	height: auto;
+	font-size: 14px;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: auto;
 	overflow: hidden;
 	text-align: center;
 }
 
 .bottom-bar {
-	margin: 10px 0;
-	height: 20px;
+	margin: 15px 0;
+	height: 180px;
 }
 
 .basic {
@@ -55,8 +55,8 @@ header {
 .top-basic {
 	width: 100%;
 	text-align: center;
-	font-size: 14px;
-	padding: 55px;
+	font-size: 16px;
+	padding: 45px;
 }
 
 .item-basic {
@@ -65,9 +65,9 @@ header {
 }
 
 .item-basic ul li {
-	width: 30px;
+	width: 55px;
 	height: 60px;
-	margin: 10px;
+	margin: 10px 0p 10px 0px;
 	margin-right: 35px;
 }
 
@@ -76,6 +76,7 @@ header {
 	width: 100%;
 	height: 100px;
 	float: left;
+	text-align: center
 }
 
 .bottom-basic ul li:last-child {
@@ -90,9 +91,9 @@ header {
 .block1 {
 	width: 100%;
 	margin: 10px 5px 10px 0px;
-	padding: 5px 5px;
+	padding: 10px 10px;
 	float: none;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .block2 {
@@ -104,11 +105,217 @@ header {
 	left: 0;
 }
 
-.block2 ul {
-	padding: 10px 10px;
+@media screen and (max-width: 768px) {
+
+	body {
+		display: block;
+		width: 768px;
+		height: auto;
+	}
+
+	header {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.square1 {
+		float: none;
+		width: 100%;
+		height: 50px;
+		margin: 0 5px 10px 5px;
+	}
+
+	.square2 {
+		float: none;
+		width: 100%;
+		height: 50px;
+		margin: 0 5px 10px 5px;
+	}
+
+	.square3 {
+		float: none;
+		width: 100%;
+		height: 50px;
+		margin: 0 5px 10px 5px;
+		font-size: 10px;
+		text-align: left;
+	}
+
+	.bar {
+		height: 243px;
+		font-size: 10px;
+		margin: 0 auto;
+		margin-top: 10px;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.bottom-bar {
+		margin: 10px 0;
+		height: 20px;
+	}
+
+	.basic {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.top-basic {
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		padding: 55px;
+	}
+
+	.item-basic {
+		display: block;
+		width: 100%;
+	}
+
+	.item-basic ul li {
+		width: 30px;
+		height: 60px;
+		margin: 10px;
+		margin-right: 35px;
+	}
+
+	.bottom-basic ul li {
+		margin: 0 auto;
+		width: 100%;
+		height: 100px;
+		float: left;
+	}
+
+	.bottom-basic ul li:last-child {
+		float: right;
+		margin-right: 0;
+	}
+
+	.container-footer {
+		width: 100%;
+	}
+
+	.block1 {
+		width: 100%;
+		margin: 10px 5px 10px 0px;
+		padding: 5px 5px;
+		float: none;
+		font-size: 10px;
+	}
+
+	.block2 {
+		width: 100%;
+		height: 120px;
+		float: none;
+		margin: 10px 5px 10px 0px;
+		position: absolute;
+		left: 0;
+	}
+
+	.block2 ul {
+		padding: 10px 10px;
+	}
+
+	.clearfix {
+		display: table;
+		clear: both;
+	}
 }
 
-.clearfix {
-	display: table;
-	clear: both;
-}
+@media screen and (max-width: 425px) {
+	body {
+		display: block;
+		width: 425px;
+		height: auto;
+	}
+
+	header {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 5px 0;
+	}
+
+	.square1 {
+		float: none;
+		width: 100%;
+		height: 20px;
+		margin: 0 5px 5px 5px;
+	}
+
+	.square2 {
+		float: none;
+		width: 100%;
+		height: 20px;
+		margin: 0 5px 5px 5px;
+	}
+
+	.square3 {
+		float: none;
+		width: 100%;
+		height: 40px;
+		margin: 0 5px 5px;
+		font-size: 8px;
+		text-align: left;
+	}
+
+	.bar {
+		height: auto;
+		width: auto;
+		font-size: 8px;
+		margin: 0 auto;
+		margin-top: 0;
+		overflow: scroll;
+		text-align: center;
+	}
+
+	.bottom-bar {
+		margin: 10px 0;
+		height: 70px;
+	}
+
+	.bottom-bar {
+		margin: 10px 0;
+		height: 85px;
+	}
+
+	.basic {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.top-basic {
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+		padding: 30px;
+	}
+
+	.item-basic {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.item-basic ul li {
+		width: 20px;
+		height: 20px;
+		margin: 5px;
+		margin-right: 10px;
+	}
+
+	.bottom-basic ul li {
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		font-size: 10px;
+	}
+
+	.bottom-basic ul li:last-child {
+		float: none;
+		margin-right: 0;
+	}
+
+	.container-footer {
+		width: 100%;
+	}

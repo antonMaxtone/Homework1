@@ -1,220 +1,220 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-body {
-	width: 100%;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	line-height: 22x;
-	padding: 5px 0px;
-}
+		body {
+			width: 100%;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 22x;
+			padding: 5px 0px;
+		}
 
-header {
-	display: table;
-	margin: 0 auto;
-	padding: 20px 0;
-	max-width: 960px;
-	color: #F5F5F5;
-	border-bottom: 1px solid #C2C2C2;
-}
+		header {
+			display: table;
+			margin: 0 auto;
+			padding: 20px 0;
+			max-width: 960px;
+			color: #F5F5F5;
+			border-bottom: 1px solid #C2C2C2;
+		}
 
-.square1 {
-	height: 110px;
-	width: 110px;
-	background: #777777;
-	margin-right: 5px;
-	padding: 5px;
-	float: left;
-}
+		.square1 {
+			height: 110px;
+			width: 110px;
+			background: #777777;
+			margin-right: 5px;
+			padding: 5px;
+			float: left;
+		}
 
-.square2 {
-	height: 110px;
-	width: 250px;
-	background: #777777;
-	margin: 0 10px;
-	padding: 5px;
-	float: left;
-}
+		.square2 {
+			height: 110px;
+			width: 250px;
+			background: #777777;
+			margin: 0 10px;
+			padding: 5px;
+			float: left;
+		}
 
-.square3 {
-	height: 110px;
-	width: 570px;
-	background: #777777;
-	margin-left: 5px;
-	padding: 5px;
-	float: left;
-	text-align: right;
-}
+		.square3 {
+			height: 110px;
+			width: 570px;
+			background: #777777;
+			margin-left: 5px;
+			padding: 5px;
+			float: left;
+			text-align: right;
+		}
 
-.square3 a {
-	color: #F5F5F5;
-}
+		.square3 a {
+			color: #F5F5F5;
+		}
 
-.container {
-	position: relative;
-	margin: 0 auto;
-	margin-bottom: 15px;
-	max-width: 960px;
-}
+		.container {
+			position: relative;
+			margin: 0 auto;
+			margin-bottom: 15px;
+			max-width: 960px;
+		}
 
-.container .bar {
-	/*	position: relative;*/
-	width: 160px;
-	float: left;
-}
+		.container .bar {
+			/*	position: relative;*/
+			width: 160px;
+			float: left;
+		}
 
-.container .bar .top-bar {
-	background: #777777;
-	padding: 10px 5px;
-}
+		.container .bar .top-bar {
+			background: #777777;
+			padding: 10px 5px;
+		}
 
-.top-bar ul {
-	list-style: none;
-}
+		.top-bar ul {
+			list-style: none;
+		}
 
-.top-bar ul li {
-	margin-top: 5px;
-}
+		.top-bar ul li {
+			margin-top: 5px;
+		}
 
-.top-bar ul li a {
-	text-decoration: none;
-	color: #F5F5F5;
-}
+		.top-bar ul li a {
+			text-decoration: none;
+			color: #F5F5F5;
+		}
 
-.bottom-bar {
-	height: 137px;
-	width: 160px;
-	background: #777777;
-	margin-top: 224px;
-	/*	position: absolute;*/
-	/*	bottom: 20px;*/
-}
+		.bottom-bar {
+			height: 137px;
+			width: 160px;
+			background: #777777;
+			margin-top: 224px;
+			/*	position: absolute;*/
+			/*	bottom: 20px;*/
+		}
 
-.basic {
-	width: 790px;
-	float: right;
-}
+		.basic {
+			width: 790px;
+			float: right;
+		}
 
-.top-basic {
-	background: #DCDCDC;
-	padding: 10px 25px;
-	margin: 0 0 0 0;
-	color: #777;
-}
+		.top-basic {
+			background: #DCDCDC;
+			padding: 10px 25px;
+			margin: 0 0 0 0;
+			color: #777;
+		}
 
-.item-basic ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
+		.item-basic ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
 
-.item-basic ul li {
-	width: 137px;
-	height: 160px;
-	margin: 10px;
-	float: left;
-	background: #DCDCDC;
-}
+		.item-basic ul li {
+			width: 137px;
+			height: 160px;
+			margin: 10px;
+			float: left;
+			background: #DCDCDC;
+		}
 
-.bottom-basic ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
+		.bottom-basic ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
 
-.bottom-basic ul li {
-	padding: 10px 10px;
-	background: #DCDCDC;
-	margin: 5px 5px 0 10px;
-	width: 380px;
-	height: 180px;
-	float: left;
-}
+		.bottom-basic ul li {
+			padding: 10px 10px;
+			background: #DCDCDC;
+			margin: 5px 5px 0 10px;
+			width: 380px;
+			height: 180px;
+			float: left;
+		}
 
-.bottom-basic ul li:last-child {
-	float: right;
-	margin-right: 0;
-}
+		.bottom-basic ul li:last-child {
+			float: right;
+			margin-right: 0;
+		}
 
-.container-footer {
-	width: 960px;
-	margin: 0 auto;
-	padding: 0;
-	list-style-type: none;
-	position: relative;
-}
+		.container-footer {
+			width: 960px;
+			margin: 0 auto;
+			padding: 0;
+			list-style-type: none;
+			position: relative;
+		}
 
-.block1 {
-	color: #fff;
-	width: 25%;
-	margin: 20px 5px 15px 0px;
-	padding: 5px 5px;
-	background: #777;
-	float: left;
-}
+		.block1 {
+			color: #fff;
+			width: 25%;
+			margin: 20px 5px 15px 0px;
+			padding: 5px 5px;
+			background: #777;
+			float: left;
+		}
 
-.block1 ul {
-	float: left;
-}
+		.block1 ul {
+			float: left;
+		}
 
-.block1 ul li {
-	margin-top: 5px;
-	list-style-type: none;
-}
+		.block1 ul li {
+			margin-top: 5px;
+			list-style-type: none;
+		}
 
-.block1 ul:last-child {
-	float: right;
-}
+		.block1 ul:last-child {
+			float: right;
+		}
 
-.block1 ul:first-child {
-	margin-left: 0;
-	list-style-type: none;
-}
+		.block1 ul:first-child {
+			margin-left: 0;
+			list-style-type: none;
+		}
 
-.block1:first-child ul {
-	margin: 0;
-	padding: 0;
-}
+		.block1:first-child ul {
+			margin: 0;
+			padding: 0;
+		}
 
-.block2 {
-	width: 35%;
-	height: 155px;
-	float: right;
-	margin: 20px 5px 15px 15px;
-	background: #777;
-	position: absolute;
-	left: 245px;
-}
+		.block2 {
+			width: 35%;
+			height: 155px;
+			float: right;
+			margin: 20px 5px 15px 15px;
+			background: #777;
+			position: absolute;
+			left: 245px;
+		}
 
-.block2 ul li a {
-	color: beige;
-	text-decoration: none;
-}
+		.block2 ul li a {
+			color: beige;
+			text-decoration: none;
+		}
 
-.block2 ul li {
-	list-style: inside;
-	color: beige;
-}
+		.block2 ul li {
+			list-style: inside;
+			color: beige;
+		}
 
-.block2 ul {
-	padding: 10px 10px;
-}
+		.block2 ul {
+			padding: 10px 10px;
+		}
 
-.block3:first-child {
-	width: 10px;
-	height: 60px;
-	background: #777;
-}
+		.block3:first-child {
+			width: 10px;
+			height: 60px;
+			background: #777;
+		}
 
-.block3:last-child {
-	position: absolute;
-	bottom: 10px;
-}
+		.block3:last-child {
+			position: absolute;
+			bottom: 10px;
+		}
 
-.clearfix {
-	display: table;
-	clear: both;
-}
+		.clearfix {
+			display: table;
+			clear: both;
+		}

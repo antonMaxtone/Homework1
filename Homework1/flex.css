@@ -73,7 +73,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 660px;
+	height: 550px;
 }
 
 .top-sidebar {
@@ -85,7 +85,7 @@ main {
 	background: #777;
 	height: 150px;
 	width: relative;
-	margin-bottom: 135px;
+	margin-bottom: 25px;
 }
 
 .basic {
