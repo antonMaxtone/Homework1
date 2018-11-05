@@ -5,8 +5,8 @@ var arr4 = [1, undefined, 3, 5, -3];
 var arr5 = [1, NaN, 3, 5, -3];
 
 function arrayMin(arr) {
-	var len = arr.length,
-		min = Infinity;
+	var len = arr.length;
+	var min = Infinity;
 	while (len--) {
 		if (arr[len] < min) {
 			min = arr[len];
@@ -24,8 +24,8 @@ console.log(arrayMin(arr5));
 
 
 function arrayMax(arr) {
-	var len = arr.length,
-		max = -Infinity;
+	var len = arr.length;
+	var max = -Infinity;
 	while (len--) {
 		if (arr[len] > max) {
 			max = arr[len];
@@ -46,7 +46,7 @@ function sumArray(arr) {
 	var sum = 0;
 	var len = arr.length;
 	for (var i = 0; i < len; i++) {
-		if (arr[i] != undefined && !isNaN(arr[i]) && arr[i] != null && arr[i] != Infinity && arr[i] != -Infinity) {
+		if (arr[i] !== undefined && !isNaN(arr[i]) && arr[i] !== null && arr[i] !== Infinity && arr[i] !== -Infinity) {
 			sum += arr[i];
 		}
 	}
