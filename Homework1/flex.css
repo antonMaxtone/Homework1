@@ -7,7 +7,7 @@
 body {
 	font-family: Arial, sans-serif;
 	font-size: 14px;
-	line-height: 22x;
+	line-height: 22px;
 }
 
 a {
@@ -74,6 +74,7 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 550px;
+  margin-bottom: 20px;
 }
 
 .top-sidebar {
@@ -85,7 +86,6 @@ main {
 	background: #777;
 	height: 150px;
 	width: relative;
-	margin-bottom: 25px;
 }
 
 .basic {
