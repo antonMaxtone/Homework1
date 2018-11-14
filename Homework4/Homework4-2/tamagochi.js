@@ -162,11 +162,11 @@ function Tamagochi(name) {
       );
     }
   };
-  //know it`s not work
-  //	this.arrFunc = [this.accidentallyDisappearedInTheForest, this.fell, this.education, this.play, this.swim, this.sleep, this.eat];
-  //	this.randFunc = () => {
-  //		this.arrFunc[Math.floor(Math.random() * this.arrFunc.length)]();
-  //	}
+
+//  	this.arrFunc = [this.accidentallyDisappearedInTheForest, this.fell, this.education, this.play, this.swim, this.sleep, this.eat];
+//  	this.randFunc = function () {
+//      this.arrFunc[Math.floor(Math.random() * this.arrFunc.length)]();
+//  	};
 }
 
 var toy = new Tamagochi("Pikachu");
@@ -176,13 +176,13 @@ toy.swim();
 toy.play();
 toy.fell();
 toy.education();
-toy.accidentallyDisappearedInTheForest();
+//toy.accidentallyDisappearedInTheForest();
 
-//know it`s not work
 
-//var timerId = setInterval(function getLost() {
+
+//var timerId = this.setInterval(function getLost() {
 //	if (toy.accidentallyDisappearedInTheForest) {
-//		clearInterval(timerId)
+//		this.clearInterval(timerId);
 //	}
-//	toy.randFunc()
-//}, 4000)
+//	toy.randFunc();
+//}, 2000);
