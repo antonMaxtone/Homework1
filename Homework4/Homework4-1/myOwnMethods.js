@@ -11,12 +11,12 @@ Array.prototype.myForEach = function (cb) {
 });
 
 Array.prototype.myMap = function (cb) {
-  this.arrForMap = [];
+  var arrForMap = [];
   for (var i = 0; i < this.length; i++) {
     var callback = cb(this[i], i, this);
-    this.arrForMap.push(callback);
+    arrForMap.push(callback);
   }
-  return this;
+  return arrForMap;
 };
 
 console.log("This is myMap");
@@ -26,13 +26,13 @@ console.log("This is myMap");
 });
 
 Array.prototype.myFilter = function (cb) {
-  this.arrForFilter = [];
+  var result = [];
   for (var i = 0; i < this.length; i++) {
     if (cb(this[i], i, this)) {
-      this.arrForFilter.push(this[i]);
+      result.push(this[i]);
     }
   }
-  return this;
+  return result;
 };
 console.log("This is myFilter");
 [1, 5, -1, -5, 0, 6, -4].myFilter(function (value) {
@@ -44,14 +44,14 @@ Array.prototype.mySort = function mySort(cb) {
     for (var j = 0; j < this.length - i - 1; j++) {
       if (cb) {
         if (cb(this[j], this[j + 1]) > 0) {
-          this.temp = this[j];
+          var temp = this[j];
           this[j] = this[j + 1];
-          this[j + 1] = this.temp;
+          this[j + 1] = temp;
         }
       } else if (this[j + 1].toString() < this[j].toString()) {
-        this.temp = this[j];
+        var temp = this[j];
         this[j] = this[j + 1];
-        this[j + 1] = this.temp;
+        this[j + 1] = temp;
       }
     }
   }
