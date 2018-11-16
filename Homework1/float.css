@@ -4,9 +4,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	overflow-x: hidden;
-}
 
 .wrapper {
 	width: 100%;
@@ -17,7 +14,7 @@ body {
 	width: 100%;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
-	line-height: 22x;
+	line-height: 22px;
 	padding: 5px 0px;
 }
 

@@ -67,7 +67,7 @@
  .item-basic ul li {
  	width: 55px;
  	height: 60px;
- 	margin: 10px 0p 10px 0px;
+ 	margin: 10px 0px 10px 0px;
  	margin-right: 35px;
  }
 
@@ -317,5 +317,5 @@
  	}
 
  	.container-footer {
- 		width: 100%;
- 	}
+    width: 100%;
+   }
