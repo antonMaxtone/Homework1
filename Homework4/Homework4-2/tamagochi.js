@@ -6,21 +6,19 @@ function Tamagochi(name) {
   this.boredom = 10;
   this.age = 10;
 
-  confirm("Do you want play with Pikachu?");
-  if (true) {
+  var ask = confirm("Do you want play with Pikachu?");
+  if (ask) {
     alert("Open the console and try to play with Pikachu!");
   } else {
     alert("Ok! See you next time!");
-  }
 
-  this.eat = function() {
-    if (this.happiness == 100 || this.health == 100) {
-      this.happiness += 0;
-      this.health += 0;
-    } else {
-      this.happiness += 10;
-      this.health += 10;
-    }
+  }
+  alert(ask);
+
+  this.eat = function () {
+    (this.happiness === 100 || this.health === 100) ?
+    (this.happiness, this.health) :
+    (this.happiness += 10, this.health += 10);
 
     console.log(
       name,
@@ -29,23 +27,11 @@ function Tamagochi(name) {
     this.status();
   };
 
-  this.sleep = function() {
-    if (
-      this.happiness == 100 ||
-      this.health == 100 ||
-      this.boredom == 100 ||
-      this.age == 100
-    ) {
-      this.happiness += 0;
-      this.health += 0;
-      this.boredom += 0;
-      this.age += 0;
-    } else {
-      this.happiness += 10;
-      this.health += 10;
-      this.boredom += 10;
-      this.age += 10;
-    }
+  this.sleep = function () {
+    (this.happiness === 100 || this.health === 100 || this.boredom === 100 || this.age === 100) ?
+    (this.happiness, this.health, this.boredom, this.age) :
+    (this.happiness += 10, this.health += 10, this.boredom += 10, this.age += 10);
+
     console.log(
       name,
       " is slept! And now the indicators show us the following results: "
@@ -53,16 +39,11 @@ function Tamagochi(name) {
     this.status();
   };
 
-  this.swim = function() {
-    if (this.happiness === 100 || this.health === 100 || this.sadness === 0) {
-      this.happiness += 0;
-      this.health += 0;
-      this.sadness += 0;
-    } else {
-      this.happiness += 10;
-      this.health += 10;
-      this.sadness -= 10;
-    }
+  this.swim = function () {
+    (this.happiness === 100 || this.health === 100 || this.sadness === 0) ?
+    (this.happiness, this.health, this.sadness) :
+    (this.happiness += 10, this.health += 10, this.sadness -= 10);
+    
     console.log(
       name,
       "is swam! And now the indicators show us the following results: "
@@ -70,14 +51,11 @@ function Tamagochi(name) {
     this.status();
   };
 
-  this.play = function() {
-    if (this.happiness === 100 || this.boredom === 0) {
-      this.happiness += 0;
-      this.boredom += 0;
-    } else {
-      this.happiness += 10;
-      this.boredom -= 10;
-    }
+  this.play = function () {
+    (this.happiness === 100 || this.boredom === 0) ?
+    (this.happiness, this.boredom) :
+    (this.happiness += 10, this.boredom -= 10);
+
     console.log(
       name,
       "is played! And now the indicators show us the following results: "
@@ -85,30 +63,23 @@ function Tamagochi(name) {
     this.status();
   };
 
-  this.education = function() {
-    if (this.age == 100 || this.talent == 100) {
-      this.age += 0;
-      this.talent += 0;
-    } else {
-      this.age += 10;
-      this.talent += 10;
-    }
+  this.education = function () {
+    (this.age === 100 || this.talent === 100) ?
+    (this.age, this.talent) :
+    (this.age += 10, this.talent += 10);
+    
     console.log(
       name,
       "is learned! And now the indicators show us the following results: "
     );
     this.status();
   };
-  this.fell = function() {
-    if (this.happiness === 0 || this.sadness === 100 || this.health === 0) {
-      this.happiness += 0;
-      this.sadness += 0;
-      this.health += 0;
-    } else {
-      this.happiness -= 10;
-      this.boredom += 10;
-      this.health -= 10;
-    }
+  
+  this.fell = function () {
+    (this.happiness === 0 || this.sadness === 100 || this.health === 0) ?
+    (this.happiness, this.sadness, this.health) :
+    (this.happiness -= 10, this.boredom += 10, this.health -= 10);
+  
     console.log(
       name,
       "is fell! And now the indicators show us the following results: "
@@ -116,7 +87,7 @@ function Tamagochi(name) {
     this.status();
   };
 
-  this.accidentallyDisappearedInTheForest = function() {
+  this.accidentallyDisappearedInTheForest = function () {
     this.happiness = undefined;
     this.health = undefined;
     this.talent = undefined;
@@ -130,7 +101,7 @@ function Tamagochi(name) {
     // breakTimer
   };
 
-  this.status = function() {
+  this.status = function () {
     if (this.happiness === 0 || this.health === 0) {
       console.log(name, "returns to the egg...");
     } else if (
@@ -148,25 +119,25 @@ function Tamagochi(name) {
     } else {
       console.log(
         "Happiness is: " +
-          this.happiness +
-          " ; Health is: " +
-          this.health +
-          " ; Talent is :" +
-          this.talent +
-          " ; Sadness is: " +
-          this.sadness +
-          " ; Boredom is : " +
-          this.boredom +
-          " ; Age is: " +
-          this.age
+        this.happiness +
+        " ; Health is: " +
+        this.health +
+        " ; Talent is :" +
+        this.talent +
+        " ; Sadness is: " +
+        this.sadness +
+        " ; Boredom is : " +
+        this.boredom +
+        " ; Age is: " +
+        this.age
       );
     }
   };
 
-//  	this.arrFunc = [this.accidentallyDisappearedInTheForest, this.fell, this.education, this.play, this.swim, this.sleep, this.eat];
-//  	this.randFunc = function () {
-//      this.arrFunc[Math.floor(Math.random() * this.arrFunc.length)]();
-//  	};
+  //  	this.arrFunc = [this.accidentallyDisappearedInTheForest, this.fell, this.education, this.play, this.swim, this.sleep, this.eat];
+  //  	this.randFunc = function () {
+  //      this.arrFunc[Math.floor(Math.random() * this.arrFunc.length)]();
+  //  	};
 }
 
 var toy = new Tamagochi("Pikachu");
@@ -177,8 +148,6 @@ toy.play();
 toy.fell();
 toy.education();
 //toy.accidentallyDisappearedInTheForest();
-
-
 
 //var timerId = this.setInterval(function getLost() {
 //	if (toy.accidentallyDisappearedInTheForest) {
