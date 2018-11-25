@@ -1,0 +1,147 @@
+body {
+  background-color: whitesmoke;
+  color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  color: whitesmoke;
+  position: relative;
+  height: 36px;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  font-family: "Lucida console", "Tahoma", fantasy;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+button:hover {
+  background-color: ghostwhite;
+  color: black;
+}
+
+button:active {
+  background-color: dimgray;
+  color: floralwhite;
+}
+
+input {
+  font-family: "Consolas", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+}
+
+main {
+  background: darkgray;
+  width: 700px;
+  margin: 70px auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h1 {
+  display: inline-block;
+  color: floralwhite;
+  margin: 1rem auto;
+}
+
+.todo-item {
+  display: flex;
+  font-size: 18px;
+  border-top: 5px solid gray;
+  background-color: lightgray;
+  padding: 1em;
+  align-items: center;
+}
+
+.todo-item .checkbox {
+  margin-right: 10px;
+}
+
+.todo-item .title,
+.todo-item .textfield {
+  margin-right: auto;
+}
+/*input clear*/
+.todo-item .textfield {
+  display: none;
+}
+/*buttons clear*/
+.todo-item button {
+  opacity: 0;
+}
+
+.todo-item:hover button:not(.checkbox) {
+  opacity: 1;
+}
+
+.todo-item.editing .textfield {
+  display: block;
+}
+
+.todo-item.editing .title {
+  display: none;
+}
+/*completed start*/
+.todo-item.completed * {
+  color:lightslategrey;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+.todo-item.completed .title {
+  text-decoration: line-through;
+}
+/*completed end*/
+
+#todo-form {
+  display: flex;
+  /*    background-color: #FAFAFA;*/
+  border-top: 5px solid white;
+  padding: 10px;
+}
+
+#todo-form input {
+  flex: 1;
+}
+
+#todo-form input:focus {
+  border: 1px solid whitesmoke;
+}
+
+#todo-form button {
+  margin-left: 10px;
+}
