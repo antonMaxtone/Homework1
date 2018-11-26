@@ -75,6 +75,16 @@ const main = (document => {
     const listItem = this.parentNode; 
     todoList.removeChild(listItem);
   }
+
+  function load () {
+    const data = JSON.parse(localStorage.getItem("todos"));
+    return data;
+  }
+
+  function save (data) {
+    const string = JSON.stringify(data);
+     localStorage.setItem("todos", string); 
+  }
   
   const todoList = document.getElementById("todo-list");
   const todoItems = document.querySelectorAll(".todo-item");
