@@ -90,7 +90,8 @@ const main = (document => {
   const todoItems = document.querySelectorAll(".todo-item");
   const todoForm = document.getElementById("todo-form");
   const addInput = document.getElementById("add-input");
-  
+  // const data = [ {id: 1, title: "", completed: false}, {}, {}];
+
   function main () {
     todoForm.addEventListener("submit", addTodoItem);
     todoItems.forEach(item => bindEvents(item));
