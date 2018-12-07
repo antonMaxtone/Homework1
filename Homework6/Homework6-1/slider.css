@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  margin: 0 auto;
+  color: white;
+}
+
+.nba-carousel {
+  width: 640px;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.nba-carousel .inner {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: left 0.45s ease-out;
+}
+
+.nba-carousel .balls {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.nba-carousel .balls .bubble {
+  margin: 5px;
+  background-color: darkred;
+  border-radius: 1000px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  opacity: 0.35;
+  transition: opacity 0.1s linear;
+  cursor: pointer;
+}
+
+.nba-carousel .balls .bubble:hover {
+  opacity: 0.65;
+}
+
+.nba-carousel .balls .bubble.active {
+  opacity: 1;
+}
+
+.nba-carousel .next::after, .nba-carousel .prev::after {
+  content: '>';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: darkred;
+  font-size: 30px;
+  width: 1em;
+  height: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(-50%);
+  line-height: 3em;
+  box-sizing: border-box;
+  padding: 0 0.2em;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.1s linear;
+  color: aliceblue;
+}
+
+.nba-carousel .next:hover::after, .nba-carousel .prev:hover::after {
+  opacity: 1;
+}
+
+.nba-carousel .prev::after {
+  content: '<';
+  left: 0;
+}
