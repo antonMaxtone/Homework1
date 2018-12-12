@@ -1,30 +1,24 @@
 // 1. isPrime - Returns true or false, indicating whether the given number is prime.
 
-function isPrime (number) {
-  if (number === 0 || number === 1) {
-    return false;
-  } else if (number > 1 && number % 2 === 1 ) {
-    return true;
-  } else {
-    return false;
+function isPrime (num) {
+  if (num === 0) {
+      return false;
   }
+  for (let i = 2; i < num; i++) {
+      if (num % i === 0) {
+          return false
+      }
+  }
+  return true
 }
 
-console.log(isPrime(0));                          // false
-console.log(isPrime(1));                          // false
-console.log(isPrime(17));                         // true
-console.log(isPrime(10000000000000));             // false
+console.log(isPrime(1));
+console.log(isPrime(9));
+console.log(isPrime(17));
+console.log(isPrime(10000000000000));
 
 // 2.  iFactorial - Returns a number that is the iFactorial of the given number.
 
-function iFactorial(n) {
-  if (n === 1 || n === 0) {
-    return 1;
-  } else { 
-      return n * iFactorial(n - 1); 
-  }
-}
-// or
 function iFactorial (n) {
   let iFactorial = 1;
   for (let i = 2; i <= n; i++) {
@@ -33,9 +27,6 @@ function iFactorial (n) {
   return iFactorial;
 }
 
-console.log (iFactorial(1));                        // 1
-console.log (iFactorial(0));                        // 1
-console.log (iFactorial(6));                        // 720
 console.log (iFactorial(1));                        // 1
 console.log (iFactorial(0));                        // 1
 console.log (iFactorial(6));                        // 720
@@ -66,10 +57,10 @@ console.log (fib(20));                             // 6765
 // 4.  isSorted - Returns true or false, indicating whether the given array of numbers is sorted.
 
 function isSorted (a) {
-  if(a == null) {
+  if(!a) {
     return false;
 }
-else if (a.length == 0) {
+else if (a.length === 0) {
     return true;
 }
 for (let i = 0; i < a.length - 1; i++) {
@@ -147,36 +138,28 @@ console.log(missing([1, 2, 3, 4]));               // undefined
 
 // 9.  isBalanced - Takes a string and returns true or false indicating whether its curly braces are balanced.
 
-function isBalanced (string) {
-  const arr = string.split('');
-  let open = [];
-  
-  const openBrackets = {
-    '(': true,
-    '[': true,
-    '{': true,
-  };
-  
-  const closedBrackets = {
-    ')': '(',
-    ']': '[',
-    '}': '{',
-  };
-  
-  for (let i = 0, length = arr.length; i < length; i++) {
-    if (openBrackets[arr[i]]) {
-      open.push(arr[i]);
-    } else if (closedBrackets[arr[i]] && open.pop() !== closedBrackets[arr[i]]) {
-      return false;
-    }
+function isBalanced (str) {
+  let newStr = '';
+  for (let i = 0; i < str.length; i++) {
+      if (str[i] === '{' || str[i] === '}') {
+          newStr += str[i]
+      }
   }
-  
-  return !open.length;
+  if (newStr.length % 2 !== 0) {
+      return false
+  }
+  for (let i = 0; i < newStr.length / 2; i++) {
+      if (newStr[i] !== '{' || newStr[newStr.length - i - 1] !== '}') {
+          return false
+      }
+  }
+  return true
 }
 
-console.log(isBalanced('}{'));                      // false
-console.log(isBalanced('{{}'));                     // false
-console.log(isBalanced('{}{}'));                    // true
-console.log(isBalanced('foo { bar { baz } boo }')); // true
-console.log(isBalanced('foo { bar { baz }'));       // false
-console.log(isBalanced('foo { bar } }'));           // false
+console.log(isBalanced('}{'));
+console.log(isBalanced('{{}'));
+console.log(isBalanced('{}{}'));
+console.log(isBalanced('foo { bar { baz } boo }'));
+console.log(isBalanced('foo { bar { baz }'));
+console.log(isBalanced('foo { bar } }'));
+console.log(isBalanced('{{}}'));
